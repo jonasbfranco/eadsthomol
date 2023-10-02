@@ -1,3 +1,59 @@
+# Comandos
+```php
+composer create-project --prefer-dist laravel/laravel eadsthomol
+```
+
+### Gerar chave criptografia
+```php
+cp .env.example .env
+php artisan key:generate --ansi
+```
+### Connecting our Database
+- open .env file root directory.
+
+```php
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=eadstdb
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### Create Controller AuthController
+```php 
+php artisan make:controller AuthController
+```
+
+### Create Controller HomeController
+```php 
+php artisan make:controller HomeController
+```
+
+### Create Blade View
+- Bootstrap 5 https://getbootstrap.com/docs/5.3/getting-started/download/
+
+```php 
+resources/views/login.blade.php
+resources/views/register.blade.php
+resources/views/home.blade.php
+```
+### Define Route 
+- routes/web.php
+
+
+### Comandos diversos
+```php
+php artisan vendor:publish --tag=laravel-assets --ansi --force
+php artisan package:discover --ansi
+```
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
