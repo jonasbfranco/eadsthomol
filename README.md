@@ -20,27 +20,15 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### Create Controller AuthController
+### Create Controller
 ```php 
 php artisan make:controller AuthController
 ```
 
-### Create Controller HomeController
+### Create Request
 ```php 
-php artisan make:controller HomeController
+php artisan make:request RegisterRequest
 ```
-
-### Create Blade View
-- Bootstrap 5 https://getbootstrap.com/docs/5.3/getting-started/download/
-
-```php 
-resources/views/login.blade.php
-resources/views/register.blade.php
-resources/views/home.blade.php
-```
-### Define Route 
-- routes/web.php
-
 
 ### Comandos diversos
 ```php
