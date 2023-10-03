@@ -33,6 +33,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
 });
 
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+})->name('forgot-password');
+
 // Route::get('/login', function () {
 //     return view('auth.login');
 // })->name('login');;
