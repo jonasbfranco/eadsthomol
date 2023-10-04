@@ -23,6 +23,7 @@ DB_PASSWORD=
 ### Create Controller
 ```php 
 php artisan make:controller AuthController
+php artisan make:controller ForgetPasswordManager
 ```
 
 ### Create Request

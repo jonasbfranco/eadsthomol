@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ForgetPasswordManager;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,9 +34,15 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
 });
 
-Route::get('/forgot-password', function () {
-    return view('auth.forgot-password');
-})->name('forgot-password');
+Route::get('/forget-password', [ForgetPasswordManager::class, 'forgetPassword'])->name('forget.password');
+Route::post('/forget-password', [ForgetPasswordManager::class, 'forgetPasswordPost'])->name('forget.password.post');
+Route::get('/reset-password/{token}', [ForgetPasswordManager::class, 'resetPassword'])->name('reset.password');
+
+
+
+// Route::get('/forgot-password', function () {
+//     return view('auth.forgot-password');
+// })->name('forgot-password');
 
 // Route::get('/login', function () {
 //     return view('auth.login');

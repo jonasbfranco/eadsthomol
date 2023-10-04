@@ -50,9 +50,13 @@
                 </div>
                 <div class="password-area">
                     <label class="password-label" for="password">Senha</label>
-                    <input class="password-input-area" type="password" name="password"
-                        class="@error('password') is-invalid @enderror" placeholder="Digite sua senha"
-                        value="{{ @old('password') }}" />
+                    <div class="password-input-area">
+                        <input type="password" name="password"
+                            class="@error('password') is-invalid @enderror" placeholder="Digite sua senha"
+                            id="confirmeSenha"/>
+                        <img src="/assets/icons/eyeIcon.png" alt="Ícone mostrar/ocultar senha" id="image"
+                            onclick="togglePasswordVisibility('confirmeSenha')" />
+                    </div>
                     @error('password')
                         <div class="error">
                             {{ $message }}
@@ -61,9 +65,12 @@
                 </div>
                 <div class="password-area">
                     <label class="password-label" for="password_confirmation">Confirme sua Senha</label>
-                    <input class="password-input-area" type="password"
-                        class="@error('password_confirmation') is-invalid @enderror" name="password_confirmation"
-                        placeholder="Confirme sua senha" id="confirmeSenha_confirmation" />
+                    <div class="password-input-area">
+                        <input type="password" class="@error('password_confirmation') is-invalid @enderror" name="password_confirmation"
+                            placeholder="Confirme sua senha" id="confirmeSenha_confirmation" />
+                        <img src="/assets/icons/eyeIcon.png" alt="Ícone mostrar/ocultar senha"
+                            onclick="togglePasswordVisibility('confirmeSenha_confirmation')" />
+                    </div>
                 </div>
                 <div>
                     <button class="login-button" type="submit">Cadastar</button>

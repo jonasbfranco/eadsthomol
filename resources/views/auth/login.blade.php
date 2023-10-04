@@ -35,7 +35,7 @@
                 <div class="password-area">
                     <div class="password-label">
                         <label class="password-area-text" for="password">Senha</label>
-                        <a href="{{ route('forgot-password') }}" class="password-area-forgot">Esqueceu sua senha?</a>
+                        <a href="{{ route('forget.password') }}" class="password-area-forgot">Esqueceu sua senha?</a>
                     </div>
                     <div class="password-input-area">
                         <input type="password" name="password" placeholder="Digite sua senha" />
@@ -49,11 +49,6 @@
             <div class="register-area">
                 Ainda não tem cadastro? <a href="{{ route('register') }}">Cadastre-se</a>
             </div>
-        </div>
-        <div class="terms">
-            Ao continuar, você concorda com os <a href="">Termos de Uso</a> e a
-            <a href="">Política de Privacidade</a>, e também, em receber
-            comunicações via e-mail e push de todos os nossos parceiros.
         </div>
     </div>
 

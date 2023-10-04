@@ -1,7 +1,7 @@
 <h1>Pagina inicial</h1>
 <br />
 @guest
-<button><a href="{{'login'}}">Login</a></button>
+<button><a href="{{route('login')}}">Login</a></button>
 @endguest
 <br />
 @auth

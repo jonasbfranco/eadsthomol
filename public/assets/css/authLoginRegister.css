@@ -22,6 +22,12 @@ body {
 /*
 * Errors
 */
+.success {
+    background-color: rgba(0, 124, 19, 0.2);
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+}
 .error {
     background-color: rgba(255,0,0,0.2);
     text-align: center;
